@@ -2,6 +2,8 @@
 function enter() {
     var selectedLi = $(this);
     var menu = selectedLi.find('.menu');
+    var other = $('.show');
+    other.removeClass('show');
     menu.addClass('show');
 }
 
