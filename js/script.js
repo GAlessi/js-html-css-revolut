@@ -1,8 +1,19 @@
 
-function show() {
-console.log('PROVA');
+function enter() {
+    var selectedLi = $(this);
+    var menu = selectedLi.find('.menu');
+    menu.addClass('show');
 }
 
+function out() {
+    $('main').click(function () {
+        $('div.menu').removeClass('show');
+    })
+}
+
+function show() {
+    $('.dropdownSide li').hover(enter, out)
+}
 
 function init() {
     show();
