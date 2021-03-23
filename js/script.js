@@ -14,7 +14,7 @@ function out() {
 }
 
 function show() {
-    $('.dropdownSide li').hover(enter, out)
+    $('.dropdownSide>ul>li').hover(enter, out)
 }
 
 function init() {
